@@ -1,6 +1,14 @@
+// Load cullenites.js file the .js is redundat
+
+let cullenites = require('./cullenites');
+let myFavoriteNumber = require('./myFavoriteNumber');
+console.log('cullenites', cullenites);
+console.log('myFavoriteNumber', myFavoriteNumber);
+
 console.log('Hello from script.js');
 console.log('Yay for node!!!node');
 
+/* 
 let age = 28;
 if (age > 23) {
   console.log('you are an old person');
@@ -15,8 +23,6 @@ console.log(`Happy birthday to you! You are ${birthday()}`);
 console.log(`Happy birthday to you! You are ${birthday()}`);
 console.log(`Happy birthday to you! You are ${birthday()}`);
 
-// Load cullenites.js file
-let cullenites = require('./cullenites.js');
 for (let student of cullenites) {
   console.log(`Welcome to node week, ${student}`);
 }
@@ -38,3 +44,4 @@ function fillAllTheNumbers(num) {
 
 fillAllTheNumbers(number);
 console.log(allTheNumbers);
+ */
