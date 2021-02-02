@@ -1,3 +1,8 @@
+let martians = require('./aliens/martians');
+console.log('martians', martians);
+
+console.log('speak martian:', martians.speak());
+
 // Load cullenites.js file the .js is redundat
 
 let cullenites = require('./cullenites');
