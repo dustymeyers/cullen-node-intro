@@ -1,12 +1,29 @@
 // Load cullenites.js file the .js is redundat
 
 let cullenites = require('./cullenites');
+console.log('cullenites', cullenites.students);
+console.log('instructor is', cullenites.instructor);
+cullenites.addStudent('Josh');
+console.log('cullenites are now', cullenites.students);
+
 let myFavoriteNumber = require('./myFavoriteNumber');
-console.log('cullenites', cullenites);
 console.log('myFavoriteNumber', myFavoriteNumber);
 
-console.log('Hello from script.js');
-console.log('Yay for node!!!node');
+let scream = require('./scream');
+console.log('Hello', scream('world!'));
+
+const counter = require('./counter');
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+
+for (let student of cullenites.students) {
+  console.log(`Welcome to node week, ${student}`);
+}
+// console.log('Hello from script.js');
+// console.log('Yay for node!!!node');
 
 /* 
 let age = 28;
